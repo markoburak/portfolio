@@ -17,15 +17,30 @@
 }
 
 @font-face {
+    font-family: MonLight;
+    src: url(./fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: MonBold;
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
     font-family: NeuBold;
     src: url(./fonts/Neuton-Bold.ttf);
+}
+
+@font-face {
+    font-family: PerMarker;
+    src: url(./fonts/PermanentMarker-Regular.ttf);
 }
 
 body {
     font-family: NeuBold;
 }
 
-.portfolio {
+.portfolio_main {
     color: #FFFCFC;
     background-color: #222222;
     height: 100vh;
@@ -109,7 +124,7 @@ body {
     grid-row: 3/4;
 }
 
-.description {
+.small_description {
     font-family: MonReg;
     font-size: 24px;
     grid-column: 9/12;
@@ -140,11 +155,138 @@ body {
 .social {
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+#social_main {
     grid-row: 9/10;
     grid-column: 2/5;
-    justify-content: space-between;
 }
 
 .social_icon {
     width: 50px;
+}
+
+.photo_exhibition {
+    background-color: #535151;
+    height: 140vh;
+    -webkit-box-shadow: inset 0px 5px 10px 1px #000000;
+    box-shadow: inset 0px 40px 40px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(24, 1fr);
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.photo_previews {
+    grid-row: 4/15;
+    grid-column: 3/23;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display_photo {
+    width: 25vw;
+    filter: drop-shadow(15px 15px 20px rgba(0, 0, 0, 0.75));
+}
+
+.photo_buttons {
+    list-style-type: none;
+    grid-column: 3/23;
+    grid-row: 17/19;
+    display: flex;
+    justify-content: space-between;
+}
+
+.display_btn {
+    background: #FFBA48;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    width: 25vw;
+    height: 72px;
+    font-family: Neuton;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+.description {
+    height: 100vh;
+    color: #FFFCFC;
+    background-color: #222222;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.title_about_me {
+    font-size: 40px;
+    line-height: 58px;
+    display: flex;
+    justify-content: center;
+    grid-column: 2/6;
+    grid-row: 2/3;
+    font-family: PerMarker;
+}
+
+.about_me {
+    text-indent: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+
+#about_me_first {
+    grid-column: 2/6;
+    grid-row: 4/6;
+}
+
+#about_me_second {
+    grid-column: 2/6;
+    grid-row: 8/9;
+}
+
+.me_mask {
+    grid-column: 7/12;
+    grid-row: 2/10;
+    width: 40vw;
+}
+
+footer {
+    height: 25vh;
+    color: black;
+    background-color: #535151;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(10, 1fr);
+    -webkit-box-shadow: inset 0px 5px 10px 1px #000000;
+    box-shadow: inset 0px 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+#social_footer {
+    grid-row: 5/8;
+    grid-column: 2/5;
+}
+
+.my_name {
+    font-family: MonBold;
+    grid-row: 5/8;
+    grid-column: 9/12;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.235em;
 }

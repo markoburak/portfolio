@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="portfolio">
+    <div class="portfolio_main">
         <ul class="navbar">
             <li class="link link_logo"><img src="./assets/orangelogo.png" alt="logo" class="logo"></li>
             <li class="link link_portfolio">Portfolio</li>
@@ -19,11 +19,19 @@
             <li class="link link_about">About</li>
         </ul>
         <section class="page">
-            <ul class="social">
-                <li class="insta"><img class="social_icon" src="./assets/instagram.png" alt="insta"></li>
-                <li class="email"><img class="social_icon" src="./assets/email.png" alt="email"></li>
-                <li class="linkedin"><img class="social_icon" src="./assets/linkedin.png" alt="linkedin"></li>
-                <li class="telegram"><img class="social_icon" src="./assets/telegram.png" alt="telegram"></li>
+            <ul class="social" id="social_main">
+                <li class="insta">
+                    <a href="https://www.instagram.com/mark.aperture/"><img class="social_icon" src="./assets/instagram.png" alt="insta"></a>
+                </li>
+                <li class="email">
+                    <a href="mailto:burakmarko@gmail.com"><img class="social_icon" src="./assets/email.png" alt="email"></a>
+                </li>
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/in/marko-burak-06759a205/"><img class="social_icon" src="./assets/linkedin.png" alt="linkedin"></a>
+                </li>
+                <li class="telegram">
+                    <a href="https://t.me/Mark0_0"><img class="social_icon" src="./assets/telegram.png" alt="telegram"></a>
+                </li>
                 <li><span class="break"></span></li>
             </ul>
             <span class="link_dot dot"></span>
@@ -31,13 +39,52 @@
                 Marko Burak
             </div>
             <p class="title">— Me myself and I</p>
-            <p class="description">Photographer, Developer and Designer. A bit Ukrainian, American and Canadian.</p>
+            <p class="small_description">Photographer, Developer and Designer. A bit Ukrainian, American and Canadian.</p>
             <div class="hero">
                 <img class="me" src="./assets/orange3.png" alt="">
             </div>
             <div class="rec"><img src="./assets/Rectangle.png" alt="rectangle"></div>
         </section>
     </div>
+    <div class="photo_exhibition">
+        <ul class="photo_previews">
+            <li><img src="./assets/log.jpg" alt="" class="display_photo" id="photo1"></li>
+            <li><img src="./assets/streetcar.jpg" alt="" class="display_photo" id="photo2"></li>
+            <li><img src="./assets/tunnel.jpg" alt="" class="display_photo" id="photo3"></li>
+        </ul>
+        <ul class="photo_buttons">
+            <button class="display_btn" id="btn1">Nature</button>
+            <button class="display_btn" id="btn2">Warmth</button>
+            <button class="display_btn" id="btn3">Darkness</button>
+        </ul>
+    </div>
+
+    <div class="description">
+        <h2 class="title_about_me">“Photography is truth.”</h2>
+        <p class="about_me" id="about_me_first">I made this webpage to share my photos with everyone. I adore taking pictures. Through the lens of the camera I see the world in a different way, I see the magic of our world with every tiny detail of it. I'd like to share the charm of this world
+            with you here.
+        </p>
+        <p class="about_me" id="about_me_second">Go for your passion and dream like I did, and enjoy every moment on your way to them!</p>
+        <img class="me_mask" src="./assets/mask_original.jpg" alt="mask">
+    </div>
+
+    <footer>
+        <ul class="social" id="social_footer">
+            <li class="insta">
+                <a href="https://www.instagram.com/mark.aperture/"><img class="social_icon" src="./assets/instagram.png" alt="insta"></a>
+            </li>
+            <li class="email">
+                <a href="mailto:burakmarko@gmail.com"><img class="social_icon" src="./assets/email.png" alt="email"></a>
+            </li>
+            <li class="linkedin">
+                <a href="https://www.linkedin.com/in/marko-burak-06759a205/"><img class="social_icon" src="./assets/linkedin.png" alt="linkedin"></a>
+            </li>
+            <li class="telegram">
+                <a href="https://t.me/Mark0_0"><img class="social_icon" src="./assets/telegram.png" alt="telegram"></a>
+            </li>
+        </ul>
+        <p class="my_name">Marko Burak</p>
+    </footer>
 
 </body>
 
